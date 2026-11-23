@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 系统启动页接管图形，窗口只保留底色，避免 Flutter 首帧前重复显示图标。 -->
+    <style name="ResumeLaunchTheme" parent="ResumeLaunchBaseTheme">
+        <item name="android:windowBackground">@color/resume_launch_background</item>
+        <item name="android:windowSplashScreenBackground">@color/resume_launch_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/resume_mark</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/resume_icon_background</item>
+    </style>
+</resources>

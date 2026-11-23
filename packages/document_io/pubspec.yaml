@@ -1,0 +1,19 @@
+name: document_io
+description: Validated text and PDF import/export tools for ResumeData.
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  archive: 4.3.0
+  image: 4.10.1
+  pdf: ^3.13.1
+  resume_domain:
+    path: ../resume_domain
+  xml: ^7.0.1
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.26.3

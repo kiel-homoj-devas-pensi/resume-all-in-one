@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "0.1.0",
+  "profile": {
+    "id": "profile-001",
+    "fullName": "张三",
+    "headline": "Flutter 工程师",
+    "email": "zhangsan@example.com",
+    "phone": "13800000000",
+    "location": "上海",
+    "links": []
+  },
+  "workExperiences": [
+    {
+      "id": "work-001",
+      "organization": "示例科技",
+      "position": "客户端工程师",
+      "dateRange": {
+        "start": {
+          "year": 2024,
+          "month": 3
+        },
+        "end": null,
+        "isCurrent": true
+      },
+      "summary": "负责离线客户端。",
+      "highlights": [
+        "实现可靠版本保存"
+      ]
+    }
+  ],
+  "educations": [],
+  "projects": [],
+  "skillGroups": [
+    {
+      "id": "skill-001",
+      "name": "客户端",
+      "skills": [
+        "Dart",
+        "Flutter"
+      ]
+    }
+  ],
+  "certifications": [],
+  "languages": [
+    {
+      "id": "language-001",
+      "name": "中文",
+      "proficiency": "native"
+    }
+  ],
+  "customSections": [],
+  "unmapped": {},
+  "futureRootField": "保留"
+}

@@ -1,0 +1,18 @@
+name: local_storage
+description: Drift-backed local persistence for canonical resume documents.
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  drift: ^2.35.0
+  resume_domain:
+    path: ../resume_domain
+
+dev_dependencies:
+  build_runner: ^2.16.1
+  drift_dev: ^2.35.0
+  lints: ^6.0.0
+  test: ^1.26.3

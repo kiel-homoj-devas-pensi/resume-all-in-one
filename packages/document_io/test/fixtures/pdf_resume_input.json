@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "0.1.0",
+  "profile": {
+    "id": "profile-pdf-001",
+    "fullName": "林晓舟",
+    "headline": "Flutter 客户端工程师 · 离线产品体验",
+    "email": "xiaozhou.lin@example.com",
+    "phone": "13800000000",
+    "location": "杭州",
+    "links": [
+      {
+        "id": "link-homepage-001",
+        "label": "个人主页",
+        "url": "https://example.com/xiaozhou"
+      },
+      {
+        "id": "link-code-001",
+        "label": "代码作品",
+        "url": "https://example.com/xiaozhou/projects/resume-all-in-one-with-a-very-long-readable-path"
+      }
+    ]
+  },
+  "workExperiences": [
+    {
+      "id": "work-pdf-001",
+      "organization": "示例科技有限公司",
+      "position": "高级客户端工程师",
+      "dateRange": {
+        "start": { "year": 2022, "month": 3 },
+        "end": null,
+        "isCurrent": true
+      },
+      "summary": "负责离线优先的移动端产品研发，从领域模型、版本存储到用户可见流程保持同一套事实边界。与产品和设计同事共同拆分验收场景，让每次迭代都能独立验证并安全回退。",
+      "highlights": [
+        "将长流程拆成可测试的 Application Service，降低界面状态与数据库事务互相耦合的风险。",
+        "建立格式化、静态分析、单元测试和 Android 构建质量门，减少跨平台回归。",
+        "针对超长中文、英文 token 与异常输入补充边界测试，避免内容被静默截断。"
+      ]
+    },
+    {
+      "id": "work-pdf-002",
+      "organization": "星河工作室",
+      "position": "Flutter 工程师",
+      "dateRange": {
+        "start": { "year": 2020, "month": 7 },
+        "end": { "year": 2022, "month": 2 },
+        "isCurrent": false
+      },
+      "summary": "参与多端业务组件建设，持续改进无障碍语义、弱网反馈和本地缓存策略。",
+      "highlights": [
+        "整理复杂表单的验证规则，使错误提示可以定位到具体字段。",
+        "通过小步提交和可复现 fixture 保留关键设计决策的演进过程。"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "id": "education-pdf-001",
+      "institution": "示例大学",
+      "degree": "工学学士",
+      "fieldOfStudy": "计算机科学与技术",
+      "dateRange": {
+        "start": { "year": 2016, "month": 9 },
+        "end": { "year": 2020, "month": 6 },
+        "isCurrent": false
+      },
+      "highlights": [
+        "主修数据结构、软件工程与人机交互。",
+        "毕业设计聚焦移动端离线数据一致性。"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-pdf-001",
+      "name": "简历全能帮",
+      "role": "核心开发者",
+      "dateRange": {
+        "start": { "year": 2025, "month": 11 },
+        "end": null,
+        "isCurrent": true
+      },
+      "summary": "面向中文用户的离线简历管理工具，围绕 Canonical Schema、不可变版本与本地导出构建最小可靠闭环。",
+      "highlights": [
+        "实现完整结构化编辑、历史恢复以及 Markdown、JSON 和 PDF 导出。",
+        "所有用户事实写入前均经过 validation，未知内容进入待确认区域。"
+      ],
+      "links": [
+        {
+          "id": "project-link-pdf-001",
+          "label": "项目说明",
+          "url": "https://example.com/projects/resume-all-in-one"
+        }
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "id": "skill-pdf-001",
+      "name": "客户端工程",
+      "skills": ["Dart", "Flutter", "Drift", "SQLite", "Widget Test"]
+    },
+    {
+      "id": "skill-pdf-002",
+      "name": "工程实践",
+      "skills": ["领域建模", "版本化数据", "可访问性", "隐私边界", "持续集成"]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "certification-pdf-001",
+      "name": "示例移动应用开发认证",
+      "issuer": "示例技术协会",
+      "issuedOn": { "year": 2024, "month": 5 },
+      "expiresOn": { "year": 2027, "month": 5 },
+      "credentialId": "CERT-2024-001",
+      "credentialUrl": "https://example.com/certificates/CERT-2024-001"
+    }
+  ],
+  "languages": [
+    {
+      "id": "language-pdf-001",
+      "name": "中文",
+      "proficiency": "native"
+    },
+    {
+      "id": "language-pdf-002",
+      "name": "英语",
+      "proficiency": "professional"
+    }
+  ],
+  "customSections": [
+    {
+      "id": "custom-pdf-001",
+      "title": "开源与分享",
+      "items": [
+        {
+          "id": "custom-item-pdf-001",
+          "title": "工程实践分享",
+          "description": "定期整理离线应用、数据迁移和 PDF 排版中的真实问题，强调为什么这样设计以及如何验证边界。"
+        }
+      ]
+    }
+  ],
+  "unmapped": {
+    "textImport": {
+      "lines": [
+        {
+          "lineNumber": 18,
+          "text": "补充说明：愿意参与技术文档建设与新人辅导。"
+        }
+      ]
+    },
+    "legacyNote": "该字段尚未映射，但必须在导出中可见。"
+  }
+}

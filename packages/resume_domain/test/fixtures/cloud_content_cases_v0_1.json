@@ -1,0 +1,22 @@
+[
+  {"name":"未知字段中的 id 不是已知实体","path":["profile","futureProfileField"],"value":{"id":"profile-001","numbers":[1,1.5,null]},"accepted":true},
+  {"name":"空姓名仅为建议","path":["profile","fullName"],"value":"","accepted":true},
+  {"name":"不填写邮箱","path":["profile","email"],"value":"","accepted":true},
+  {"name":"不填写链接 URL","path":["profile","links",0,"url"],"value":"","accepted":true},
+  {"name":"只知道年份不补月","path":["educations",0,"dateRange","start"],"value":{"year":2018,"month":null},"accepted":true},
+  {"name":"跨区段实体 ID 重复","path":["workExperiences",0,"id"],"value":"profile-001","accepted":false},
+  {"name":"嵌套链接 ID 重复","path":["projects",0,"links",0,"id"],"value":"link-profile-001","accepted":false},
+  {"name":"自定义项目 ID 重复","path":["customSections",0,"items",0,"id"],"value":"work-001","accepted":false},
+  {"name":"年月不能用布尔值","path":["workExperiences",0,"dateRange","start","year"],"value":true,"accepted":false},
+  {"name":"月份不能用浮点数","path":["workExperiences",0,"dateRange","start","month"],"value":6.0,"accepted":false},
+  {"name":"月份超出范围","path":["workExperiences",0,"dateRange","start","month"],"value":13,"accepted":false},
+  {"name":"当前经历不能有结束日期","path":["workExperiences",0,"dateRange","end"],"value":{"year":2024},"accepted":false},
+  {"name":"日期逆序","path":["educations",0,"dateRange","end"],"value":{"year":2017},"accepted":false},
+  {"name":"证书期限逆序","path":["certifications",0,"expiresOn"],"value":{"year":2023},"accepted":false},
+  {"name":"已知实体 ID 不能为空","path":["languages",0,"id"],"value":" ","accepted":false},
+  {"name":"技能不能空白","path":["skillGroups",0,"skills",0],"value":" ","accepted":false},
+  {"name":"非法邮箱","path":["profile","email"],"value":"synthetic-invalid-email","accepted":false},
+  {"name":"非 HTTP 链接","path":["profile","links",0,"url"],"value":"file:///synthetic","accepted":false},
+  {"name":"未知语言枚举","path":["languages",0,"proficiency"],"value":"futureLanguage","accepted":false},
+  {"name":"未知 Schema 版本","path":["schemaVersion"],"value":"9.9.9","accepted":false}
+]

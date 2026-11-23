@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <uses-library android:name="android.test.runner" />
+        <uses-library android:name="android.test.base" android:required="false" />
+        <provider
+            android:name="com.resumeallinone.resume_all_in_one_client.PhotoTestProvider"
+            android:authorities="com.resumeallinone.resume_all_in_one_client.test.photos"
+            android:exported="true" />
+        <provider
+            android:name="com.resumeallinone.resume_all_in_one_client.ImportTestProvider"
+            android:authorities="com.resumeallinone.resume_all_in_one_client.test.imports"
+            android:exported="true" />
+        <provider
+            android:name="com.resumeallinone.resume_all_in_one_client.DeliveryTestProvider"
+            android:authorities="com.resumeallinone.resume_all_in_one_client.test.documents"
+            android:exported="true" />
+        <activity
+            android:name="com.resumeallinone.resume_all_in_one_client.DeliveryTestViewer"
+            android:exported="true"
+            android:label="本机合成交付测试">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

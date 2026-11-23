@@ -1,0 +1,15 @@
+// 仅当调用进程显式启用开关时，为所有 Gradle build 添加中国大陆镜像。
+if (System.getenv("USE_CHINA_MAVEN_MIRROR") == "true") {
+    gradle.beforeSettings { settings ->
+        settings.pluginManagement.repositories {
+            maven { url = URI.create("https://maven.aliyun.com/repository/google") }
+            maven { url = URI.create("https://maven.aliyun.com/repository/central") }
+            maven { url = URI.create("https://maven.aliyun.com/repository/gradle-plugin") }
+        }
+        settings.dependencyResolutionManagement.repositories {
+            maven { url = URI.create("https://maven.aliyun.com/repository/google") }
+            maven { url = URI.create("https://maven.aliyun.com/repository/central") }
+        }
+    }
+
+}

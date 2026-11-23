@@ -1,0 +1,19 @@
+name: agent_runtime
+description: Offline Tool Registry and confirmation-gated Agent runtime.
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  agent_protocol:
+    path: ../agent_protocol
+  resume_domain:
+    path: ../resume_domain
+
+dev_dependencies:
+  lints: ^6.0.0
+  local_storage:
+    path: ../local_storage
+  test: ^1.26.3

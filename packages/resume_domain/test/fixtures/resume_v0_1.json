@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "0.1.0",
+  "profile": {
+    "id": "profile-001",
+    "fullName": "张三",
+    "headline": "移动端工程师",
+    "email": "zhangsan@example.com",
+    "phone": "13800000000",
+    "location": "上海",
+    "links": [
+      {
+        "id": "link-profile-001",
+        "label": "GitHub",
+        "url": "https://github.com/example",
+        "futureLinkField": "保留"
+      }
+    ],
+    "futureProfileField": {
+      "enabled": true
+    }
+  },
+  "workExperiences": [
+    {
+      "id": "work-001",
+      "organization": "示例科技",
+      "position": "Flutter 工程师",
+      "dateRange": {
+        "start": {
+          "year": 2023,
+          "month": 6
+        },
+        "end": null,
+        "isCurrent": true
+      },
+      "summary": "负责移动端基础架构。",
+      "highlights": [
+        "建立离线数据层"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "id": "education-001",
+      "institution": "示例大学",
+      "degree": "学士",
+      "fieldOfStudy": "计算机科学",
+      "dateRange": {
+        "start": {
+          "year": 2018,
+          "month": 9
+        },
+        "end": {
+          "year": 2022,
+          "month": 6
+        },
+        "isCurrent": false
+      },
+      "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-001",
+      "name": "简历全能帮",
+      "role": "开发者",
+      "dateRange": null,
+      "summary": "离线优先的简历管理应用。",
+      "highlights": [
+        "定义 Canonical Resume Schema"
+      ],
+      "links": [
+        {
+          "id": "link-project-001",
+          "label": "项目主页",
+          "url": "https://example.com/resume"
+        }
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "id": "skill-group-001",
+      "name": "客户端",
+      "skills": [
+        "Dart",
+        "Flutter"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "certification-001",
+      "name": "示例认证",
+      "issuer": "示例机构",
+      "issuedOn": {
+        "year": 2024,
+        "month": 1
+      },
+      "expiresOn": null,
+      "credentialId": "CERT-001",
+      "credentialUrl": "https://example.com/cert/CERT-001"
+    }
+  ],
+  "languages": [
+    {
+      "id": "language-001",
+      "name": "中文",
+      "proficiency": "native"
+    }
+  ],
+  "customSections": [
+    {
+      "id": "custom-001",
+      "title": "开源贡献",
+      "items": [
+        {
+          "id": "custom-item-001",
+          "title": "示例项目",
+          "description": "修复数据一致性问题。"
+        }
+      ]
+    }
+  ],
+  "unmapped": {
+    "sourceLabel": "原文中的未归类段落"
+  },
+  "futureRootField": [
+    "必须",
+    "保留"
+  ]
+}

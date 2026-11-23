@@ -1,0 +1,5 @@
+# Markdown 文档与导出契约夹具固定 LF，避免 Windows 的 core.autocrlf 产生整文件噪音或改变字节级预期。
+*.md text eol=lf
+packages/document_io/test/fixtures/*.json text eol=lf
+packages/document_io/test/fixtures/*.md text eol=lf
+packages/document_io/test/fixtures/*.txt text eol=lf

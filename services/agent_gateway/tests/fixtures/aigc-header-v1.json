@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1",
+  "transportVersion": "1",
+  "maximumJsonUtf8Bytes": 4096,
+  "maximumHeaderCharacters": 5462,
+  "vectors": [
+    {
+      "name": "service-no-upstream",
+      "operationId": "usage-00000000-0000-4000-8000-000000000001",
+      "upstream": null,
+      "expectedMetadata": {
+        "Label": "1",
+        "ContentProducer": "Ji Ouqi",
+        "ProduceID": "usage-00000000-0000-4000-8000-000000000001",
+        "ReservedCode1": "",
+        "ContentPropagator": "Ji Ouqi",
+        "PropagateID": "usage-00000000-0000-4000-8000-000000000001",
+        "ReservedCode2": ""
+      },
+      "expectedInnerJson": "{\"Label\":\"1\",\"ContentProducer\":\"Ji Ouqi\",\"ProduceID\":\"usage-00000000-0000-4000-8000-000000000001\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"Ji Ouqi\",\"PropagateID\":\"usage-00000000-0000-4000-8000-000000000001\",\"ReservedCode2\":\"\"}",
+      "expectedHeader": "eyJMYWJlbCI6IjEiLCJDb250ZW50UHJvZHVjZXIiOiJKaSBPdXFpIiwiUHJvZHVjZUlEIjoidXNhZ2UtMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwiUmVzZXJ2ZWRDb2RlMSI6IiIsIkNvbnRlbnRQcm9wYWdhdG9yIjoiSmkgT3VxaSIsIlByb3BhZ2F0ZUlEIjoidXNhZ2UtMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwiUmVzZXJ2ZWRDb2RlMiI6IiJ9",
+      "expectedSourceIdentity": {
+        "producer": "Ji Ouqi",
+        "produceId": "usage-00000000-0000-4000-8000-000000000001",
+        "propagator": "Ji Ouqi",
+        "propagateId": "usage-00000000-0000-4000-8000-000000000001"
+      }
+    },
+    {
+      "name": "preserved-upstream-unicode",
+      "operationId": "usage-00000000-0000-4000-8000-000000000002",
+      "upstream": {
+        "Label": "1",
+        "ContentProducer": "Synthetic Source 中文😀\"\\",
+        "ProduceID": "synthetic-source-0002",
+        "ReservedCode1": "synthetic-production-code \"\\",
+        "ContentPropagator": "Synthetic Upstream Relay",
+        "PropagateID": "synthetic-upstream-propagation-0002",
+        "ReservedCode2": "synthetic-upstream-code 中文😀\"\\"
+      },
+      "expectedMetadata": {
+        "Label": "1",
+        "ContentProducer": "Synthetic Source 中文😀\"\\",
+        "ProduceID": "synthetic-source-0002",
+        "ReservedCode1": "synthetic-production-code \"\\",
+        "ContentPropagator": "Ji Ouqi",
+        "PropagateID": "usage-00000000-0000-4000-8000-000000000002",
+        "ReservedCode2": "{\"upstreamLabel\":{\"Label\":\"1\",\"ContentProducer\":\"Synthetic Source 中文😀\\\"\\\\\",\"ProduceID\":\"synthetic-source-0002\",\"ReservedCode1\":\"synthetic-production-code \\\"\\\\\",\"ContentPropagator\":\"Synthetic Upstream Relay\",\"PropagateID\":\"synthetic-upstream-propagation-0002\",\"ReservedCode2\":\"synthetic-upstream-code 中文😀\\\"\\\\\"}}"
+      },
+      "expectedInnerJson": "{\"Label\":\"1\",\"ContentProducer\":\"Synthetic Source 中文😀\\\"\\\\\",\"ProduceID\":\"synthetic-source-0002\",\"ReservedCode1\":\"synthetic-production-code \\\"\\\\\",\"ContentPropagator\":\"Ji Ouqi\",\"PropagateID\":\"usage-00000000-0000-4000-8000-000000000002\",\"ReservedCode2\":\"{\\\"upstreamLabel\\\":{\\\"Label\\\":\\\"1\\\",\\\"ContentProducer\\\":\\\"Synthetic Source 中文😀\\\\\\\"\\\\\\\\\\\",\\\"ProduceID\\\":\\\"synthetic-source-0002\\\",\\\"ReservedCode1\\\":\\\"synthetic-production-code \\\\\\\"\\\\\\\\\\\",\\\"ContentPropagator\\\":\\\"Synthetic Upstream Relay\\\",\\\"PropagateID\\\":\\\"synthetic-upstream-propagation-0002\\\",\\\"ReservedCode2\\\":\\\"synthetic-upstream-code 中文😀\\\\\\\"\\\\\\\\\\\"}}\"}",
+      "expectedHeader": "eyJMYWJlbCI6IjEiLCJDb250ZW50UHJvZHVjZXIiOiJTeW50aGV0aWMgU291cmNlIOS4reaWh_CfmIBcIlxcIiwiUHJvZHVjZUlEIjoic3ludGhldGljLXNvdXJjZS0wMDAyIiwiUmVzZXJ2ZWRDb2RlMSI6InN5bnRoZXRpYy1wcm9kdWN0aW9uLWNvZGUgXCJcXCIsIkNvbnRlbnRQcm9wYWdhdG9yIjoiSmkgT3VxaSIsIlByb3BhZ2F0ZUlEIjoidXNhZ2UtMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwiUmVzZXJ2ZWRDb2RlMiI6IntcInVwc3RyZWFtTGFiZWxcIjp7XCJMYWJlbFwiOlwiMVwiLFwiQ29udGVudFByb2R1Y2VyXCI6XCJTeW50aGV0aWMgU291cmNlIOS4reaWh_CfmIBcXFwiXFxcXFwiLFwiUHJvZHVjZUlEXCI6XCJzeW50aGV0aWMtc291cmNlLTAwMDJcIixcIlJlc2VydmVkQ29kZTFcIjpcInN5bnRoZXRpYy1wcm9kdWN0aW9uLWNvZGUgXFxcIlxcXFxcIixcIkNvbnRlbnRQcm9wYWdhdG9yXCI6XCJTeW50aGV0aWMgVXBzdHJlYW0gUmVsYXlcIixcIlByb3BhZ2F0ZUlEXCI6XCJzeW50aGV0aWMtdXBzdHJlYW0tcHJvcGFnYXRpb24tMDAwMlwiLFwiUmVzZXJ2ZWRDb2RlMlwiOlwic3ludGhldGljLXVwc3RyZWFtLWNvZGUg5Lit5paH8J-YgFxcXCJcXFxcXCJ9fSJ9",
+      "expectedSourceIdentity": {
+        "producer": "Synthetic Source 中文😀\"\\",
+        "produceId": "synthetic-source-0002",
+        "propagator": "Ji Ouqi",
+        "propagateId": "usage-00000000-0000-4000-8000-000000000002"
+      }
+    }
+  ]
+}

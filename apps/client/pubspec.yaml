@@ -1,0 +1,45 @@
+name: resume_all_in_one_client
+description: Resume All-in-One Flutter client.
+publish_to: 'none'
+version: 1.10.0+41
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+  flutter: '>=3.47.5'
+
+dependencies:
+  agent_protocol:
+    path: ../../packages/agent_protocol
+  agent_runtime:
+    path: ../../packages/agent_runtime
+  crypto: ^3.0.7
+  document_io:
+    path: ../../packages/document_io
+  drift_flutter: ^0.3.1
+  entitlements:
+    path: ../../packages/entitlements
+  file_selector: ^1.1.0
+  flutter:
+    sdk: flutter
+  local_storage:
+    path: ../../packages/local_storage
+  model_router:
+    path: ../../packages/model_router
+  path_provider: ^2.1.6
+  pdf: ^3.13.1
+  printing: ^5.15.1
+  resume_domain:
+    path: ../../packages/resume_domain
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/legal/legal_bundle.json
+    - packages/document_io/assets/fonts/NotoSansSC-Regular.ttf
+    - packages/document_io/assets/fonts/NotoSansSC-Bold.ttf
+    - packages/document_io/assets/fonts/OFL-1.1.txt

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- API 24–25 使用原生矢量和圆形底，不依赖 Flutter 的占位 PNG。 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/resume_icon_background" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/resume_mark" />
+</layer-list>
